@@ -1,5 +1,7 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import IndexPage from '../pages/IndexPage'
+import LoginPage from '../pages/LoginPage'
+import RegisterPage from '../pages/RegisterPage'
 import PrivateRoute from './PrivateRoute'
 import PublicRoute from './PublicRoute'
 
@@ -19,7 +21,11 @@ const AppRouter = () => {
                         path='/*'
                         element={
                             <PublicRoute>
-                                <IndexPage />
+                                <Routes>
+                                    <Route path='/' element={<IndexPage />} />
+                                    <Route path='/login' element={<LoginPage />} />
+                                    <Route path='/register' element={<RegisterPage />} />
+                                </Routes>
                             </PublicRoute>
                         } />
                 </Routes>

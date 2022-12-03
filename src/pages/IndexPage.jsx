@@ -14,8 +14,11 @@ const IndexPage = () => {
                             </Link>
                         </div>
                         <div className="col-md-3 py-3">
-                            <Link to="/login" className="btn btn-primary">
+                            <Link to="/login" className="btn btn-outline-primary mx-2">
                                 Iniciar Sesión
+                            </Link>
+                            <Link to="/register" className="btn btn-primary mx-2">
+                                Registrarse
                             </Link>
                         </div>
                     </div>
