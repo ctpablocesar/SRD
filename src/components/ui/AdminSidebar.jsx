@@ -11,7 +11,7 @@ export const AdminSidebar = ({ show }) => {
             <div className="sidebar-content">
                 <NavLink className="sidebar-brand mb-1" to="/admin">
                     <span className="align-middle">
-                        <img className="w-75 ml-3" src='https://ciudadanoscomprometidos.com.mx/SRD/assets/img/logo.png' />
+                        <img className="w-75 ml-3" src='assets/assets/img/logo.png' />
                     </span>
                 </NavLink>
                 <ul className="sidebar-nav">
@@ -36,6 +36,11 @@ export const AdminSidebar = ({ show }) => {
                             <li className="sidebar-item">
                                 <NavLink className="sidebar-link" to="/admin/lotes-baldios">
                                     Lotes Baldíos
+                                </NavLink>
+                            </li>
+                            <li className="sidebar-item">
+                                <NavLink className="sidebar-link" to="/admin/registro-vehicular">
+                                    Registro vehicular
                                 </NavLink>
                             </li>
                         </ul>

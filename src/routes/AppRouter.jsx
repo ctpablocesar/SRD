@@ -7,12 +7,15 @@ import AdminDashboard from '../components/ui/AdminDashboard'
 import BaldioPage from '../pages/BaldioPage'
 import BaseDatosGeneral from '../pages/BaseDatosGeneral'
 import CasasRentaPage from '../pages/CasasRentaPage'
+import Error404Page from '../pages/Error404Page'
 import IndexPage from '../pages/IndexPage'
+import RegistroVehicularPage from '../pages/InformacionPersonalPage'
 import InquilinoPage from '../pages/InquilinoPage'
 import LoginPage from '../pages/LoginPage'
 import LotesBaldiosPage from '../pages/LotesBaldiosPage'
 import PropietarioPage from '../pages/PropietarioPage'
 import RegisterPage from '../pages/RegisterPage'
+import VehiculosPage from '../pages/VehiculosPage'
 import PrivateRoute from './PrivateRoute'
 import PublicRoute from './PublicRoute'
 
@@ -40,6 +43,10 @@ const AppRouter = () => {
                                         <Route path="/inquilino" element={<InquilinoPage />} />
                                         <Route path="/lotes-baldios" element={<LotesBaldiosPage />} />
                                         <Route path="/baldio" element={<BaldioPage />} />
+                                        <Route path="/registro-vehicular" element={<RegistroVehicularPage />} />
+                                        <Route path="/vehiculos" element={<VehiculosPage />} />
+
+                                        <Route path="/*" element={<Error404Page />} />
                                     </Routes>
                                 </AdminDashboard>
                             </PrivateRoute>
