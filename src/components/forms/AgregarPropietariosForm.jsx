@@ -1,4 +1,5 @@
 import { yupResolver } from '@hookform/resolvers/yup';
+import moment from 'moment/moment';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaBuilding, FaFileAlt, FaHome, FaHouseUser, FaRegSave } from "react-icons/fa";
@@ -94,7 +95,11 @@ const AgregarPropietariosForm = ({ propietarioActive }) => {
     }
 
     useEffect(() => {
-        reset(propietarioActive);
+        const pro = {
+            ...propietarioActive,
+            fecha_nacimiento: moment(propietarioActive.fecha_nacimiento).format('YYYY-MM-DD')
+        }
+        reset(pro);
         if (propietarioActive) {
             if (propietarioActive.estatus_propiedad_pro === 'rentada') {
                 setRentaForm(propietarioActive.estatus_propiedad_pro);

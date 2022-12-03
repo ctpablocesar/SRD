@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { Toaster } from "react-hot-toast";
-import { useSelector } from 'react-redux';
-import AdminNavbar from "./AdminNavbar";
 import { AdminSidebar } from './AdminSidebar';
 import UserNavbar from "./UserNavbar";
-import UserSidebar from "./UserSidebar";
 
 
 const AdminDashboard = ({ children }) => {

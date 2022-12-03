@@ -64,3 +64,32 @@ export const updatePropietario = (data) => {
         dispatch(finishLoading())
     };
 };
+
+export const getPropietarios = () => {
+    return async (dispatch) => {
+        dispatch(startLoading());
+
+        const resp = await fetchSinToken("propietario/todos");
+        const body = await resp.json();
+
+        dispatch(savePropietarios(body));
+
+        dispatch(finishLoading());
+    };
+};
+
+const savePropietarios = ({ propietarios }) => ({
+    type: types.savingPropietarios,
+    payload: {
+        propietarios,
+    },
+});
+
+export const setPropietarioActive = (data) => ({
+    type: types.propietarioActive,
+    payload: {
+        ...data,
+    },
+});
+
+export const cleanPropietarioActive = () => ({ type: types.emptyPropietarioActive });

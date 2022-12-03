@@ -1,13 +1,25 @@
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 import { HashRouter, Route, Routes } from 'react-router-dom'
-import AdminDashboard from '../components/ui/AdminDashboard'
+import { startChecking } from '../actions/auth'
 
+import AdminDashboard from '../components/ui/AdminDashboard'
+import BaseDatosGeneral from '../pages/BaseDatosGeneral'
 import IndexPage from '../pages/IndexPage'
 import LoginPage from '../pages/LoginPage'
+import PropietarioPage from '../pages/PropietarioPage'
 import RegisterPage from '../pages/RegisterPage'
 import PrivateRoute from './PrivateRoute'
 import PublicRoute from './PublicRoute'
 
 const AppRouter = () => {
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(startChecking());
+    }, [dispatch]);
+
     return (
         <>
             <HashRouter>
@@ -18,7 +30,8 @@ const AppRouter = () => {
                             <PrivateRoute>
                                 <AdminDashboard>
                                     <Routes>
-                                        {/* <Route path='/' element={<IndexPage />} /> */}
+                                        <Route path='/' element={<BaseDatosGeneral />} />
+                                        <Route path="/propietario" element={<PropietarioPage />} />
                                     </Routes>
                                 </AdminDashboard>
                             </PrivateRoute>
