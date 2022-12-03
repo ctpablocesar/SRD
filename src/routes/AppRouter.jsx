@@ -4,11 +4,13 @@ import { HashRouter, Route, Routes } from 'react-router-dom'
 import { startChecking } from '../actions/auth'
 
 import AdminDashboard from '../components/ui/AdminDashboard'
+import BaldioPage from '../pages/BaldioPage'
 import BaseDatosGeneral from '../pages/BaseDatosGeneral'
 import CasasRentaPage from '../pages/CasasRentaPage'
 import IndexPage from '../pages/IndexPage'
 import InquilinoPage from '../pages/InquilinoPage'
 import LoginPage from '../pages/LoginPage'
+import LotesBaldiosPage from '../pages/LotesBaldiosPage'
 import PropietarioPage from '../pages/PropietarioPage'
 import RegisterPage from '../pages/RegisterPage'
 import PrivateRoute from './PrivateRoute'
@@ -36,6 +38,8 @@ const AppRouter = () => {
                                         <Route path="/propietario" element={<PropietarioPage />} />
                                         <Route path="/casas-renta" element={<CasasRentaPage />} />
                                         <Route path="/inquilino" element={<InquilinoPage />} />
+                                        <Route path="/lotes-baldios" element={<LotesBaldiosPage />} />
+                                        <Route path="/baldio" element={<BaldioPage />} />
                                     </Routes>
                                 </AdminDashboard>
                             </PrivateRoute>

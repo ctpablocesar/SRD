@@ -9,4 +9,5 @@ export const types = {
     savingRentadas: "[Propietarios] Guardando rentadas",
     propietarioActive: "[Propietarios] Guardando Propietario active",
     emptyPropietarioActive: "[Propietarios] Limpiando Propietario active",
+    savingBaldios: "[Baldios] Guardando baldíos",
 }

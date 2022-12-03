@@ -142,3 +142,53 @@ export const updateInquilinoData = (data) => {
         }
     };
 };
+
+export const getBaldios = () => {
+    return async (dispatch) => {
+        dispatch(startLoading());
+
+        const resp = await fetchSinToken("propietario/baldio");
+        const body = await resp.json();
+
+        dispatch(saveBaldios(body));
+
+        dispatch(finishLoading());
+    };
+};
+
+const saveBaldios = ({ casas }) => ({
+    type: types.savingBaldios,
+    payload: {
+        casas,
+    },
+});
+
+export const updateBaldioData = (data) => {
+    return async (dispatch) => {
+        dispatch(startLoading);
+
+        const resp = await fetchSinToken("propietario/actualizar", data, "POST");
+        const body = await resp.json();
+
+        if (body.ok) {
+            Swal.fire({
+                icon: "success",
+                title: "Inquilino actualizado correctamnete",
+                showConfirmButton: false,
+                timer: 1500,
+            });
+            setTimeout(() => {
+                window.location.href = `${import.meta.env.VITE_WINDOW_URL}/#/admin/lotes-baldios`;
+            }, 1000);
+            dispatch(cleanPropietarioActive());
+        } else {
+            console.log(body);
+            Swal.fire({
+                icon: "error",
+                title: body.msg,
+                showConfirmButton: false,
+                timer: 1500,
+            });
+        }
+    };
+};

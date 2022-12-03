@@ -162,7 +162,7 @@ const CasasRentaPage = () => {
             center: true,
         },
         {
-            name: "Clave de unidad",
+            name: "Clave catastral",
             selector: (row) => row.clave_unidad,
             sortable: true,
             width: "auto",
