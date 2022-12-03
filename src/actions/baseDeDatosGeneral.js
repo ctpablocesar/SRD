@@ -93,3 +93,52 @@ export const setPropietarioActive = (data) => ({
 });
 
 export const cleanPropietarioActive = () => ({ type: types.emptyPropietarioActive });
+
+export const getRentadas = () => {
+    return async (dispatch) => {
+        dispatch(startLoading());
+
+        const resp = await fetchSinToken("propietario/rentadas");
+        const body = await resp.json();
+
+        dispatch(saveRentadas(body));
+
+        dispatch(finishLoading());
+    };
+};
+
+const saveRentadas = ({ casas }) => ({
+    type: types.savingRentadas,
+    payload: {
+        casas,
+    },
+});
+
+export const updateInquilinoData = (data) => {
+    return async (dispatch) => {
+        dispatch(startLoading);
+
+        const resp = await fetchSinToken("propietario/actualizar", data, "POST");
+        const body = await resp.json();
+
+        if (body.ok) {
+            Swal.fire({
+                icon: "success",
+                title: "Inquilino actualizado correctamnete",
+                showConfirmButton: false,
+                timer: 1500,
+            });
+            setTimeout(() => {
+                window.location.href = `${import.meta.env.VITE_WINDOW_URL}/#/admin/casas-renta`;
+            }, 1000);
+            dispatch(cleanPropietarioActive());
+        } else {
+            Swal.fire({
+                icon: "error",
+                title: body.msg,
+                showConfirmButton: false,
+                timer: 1500,
+            });
+        }
+    };
+};

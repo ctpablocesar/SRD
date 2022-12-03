@@ -5,7 +5,9 @@ import { startChecking } from '../actions/auth'
 
 import AdminDashboard from '../components/ui/AdminDashboard'
 import BaseDatosGeneral from '../pages/BaseDatosGeneral'
+import CasasRentaPage from '../pages/CasasRentaPage'
 import IndexPage from '../pages/IndexPage'
+import InquilinoPage from '../pages/InquilinoPage'
 import LoginPage from '../pages/LoginPage'
 import PropietarioPage from '../pages/PropietarioPage'
 import RegisterPage from '../pages/RegisterPage'
@@ -32,6 +34,8 @@ const AppRouter = () => {
                                     <Routes>
                                         <Route path='/' element={<BaseDatosGeneral />} />
                                         <Route path="/propietario" element={<PropietarioPage />} />
+                                        <Route path="/casas-renta" element={<CasasRentaPage />} />
+                                        <Route path="/inquilino" element={<InquilinoPage />} />
                                     </Routes>
                                 </AdminDashboard>
                             </PrivateRoute>
