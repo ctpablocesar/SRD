@@ -1,4 +1,6 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
+import AdminDashboard from '../components/ui/AdminDashboard'
+
 import IndexPage from '../pages/IndexPage'
 import LoginPage from '../pages/LoginPage'
 import RegisterPage from '../pages/RegisterPage'
@@ -14,7 +16,11 @@ const AppRouter = () => {
                         path='admin/*'
                         element={
                             <PrivateRoute>
-
+                                <AdminDashboard>
+                                    <Routes>
+                                        {/* <Route path='/' element={<IndexPage />} /> */}
+                                    </Routes>
+                                </AdminDashboard>
                             </PrivateRoute>
                         } />
                     <Route
