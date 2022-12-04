@@ -157,7 +157,7 @@ const BaseDatosGeneral = () => {
         window.location.href = `${import.meta.env.VITE_WINDOW_URL}/#/admin/propietario`
     }
 
-    const columnsTable = ["#", "Clave de unidad", "Nombre", "Dirección", "Cuota suscripción", "Cuota mantenimiento"]
+    const columnsTable = ["#", "Clave de unidad", "Nombre", "Dirección", "Cuota"]
 
     const setRow = () => {
         if (propietarios) {
@@ -165,7 +165,7 @@ const BaseDatosGeneral = () => {
                 propietarios.map((data, index) => ([
                     index,
                     data.clave_unidad_pro,
-                    data.nombre,
+                    data.nombre_completo,
                     data.calle_pro,
                     data.cuota_pro,
                 ]))

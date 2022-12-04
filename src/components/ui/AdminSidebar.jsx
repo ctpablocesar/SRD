@@ -23,7 +23,7 @@ export const AdminSidebar = ({ show }) => {
                             </span>
                         </a>
                         <ul id="db" className="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                        <li className="sidebar-item">
+                            <li className="sidebar-item">
                                 <NavLink to="/admin/" className="sidebar-link">
                                     Base de Datos general
                                 </NavLink>
