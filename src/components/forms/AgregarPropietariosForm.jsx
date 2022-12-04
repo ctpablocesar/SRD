@@ -95,12 +95,12 @@ const AgregarPropietariosForm = ({ propietarioActive }) => {
     }
 
     useEffect(() => {
-        const pro = {
-            ...propietarioActive,
-            fecha_nacimiento: moment(propietarioActive.fecha_nacimiento).format('YYYY-MM-DD')
-        }
-        reset(pro);
         if (propietarioActive) {
+            const pro = {
+                ...propietarioActive,
+                fecha_nacimiento: moment(propietarioActive.fecha_nacimiento).format('YYYY-MM-DD')
+            }
+            reset(pro);
             if (propietarioActive.estatus_propiedad_pro === 'rentada') {
                 setRentaForm(propietarioActive.estatus_propiedad_pro);
             } else if (propietarioActive.tipo_propiedad_pro === 'baldio') {
@@ -450,7 +450,7 @@ const AgregarPropietariosForm = ({ propietarioActive }) => {
                                 <small className='text-center text-danger'> {errors.numero_pro && (errors.numero_pro.type === 'typeError' ? 'Campo requerido' : errors.numero_pro.message)} </small>
                             </div>
                             <div className="col-md-4 mb-3">
-                                <label className="form-label">Clave de Unidad *</label>
+                                <label className="form-label">Clave de catastral *</label>
                                 <input
                                     type="text"
                                     className="form-control"
@@ -594,8 +594,8 @@ const AgregarPropietariosForm = ({ propietarioActive }) => {
                                             type="number"
                                             className="form-control"
                                             {...register("celular_inquilino", { required: true })}
-                                    defaultValue={0}
-                                    placeholder="Celular"
+                                            defaultValue={0}
+                                            placeholder="Celular"
                                         />
                                         <small className='text-center text-danger'> {errors.celular_inquilino && errors.celular_inquilino.message} </small>
                                     </div>
@@ -605,8 +605,8 @@ const AgregarPropietariosForm = ({ propietarioActive }) => {
                                             type="text"
                                             className="form-control"
                                             {...register("telefono_inquilino")}
-                                    defaultValue={0}
-                                    placeholder="Teléfono"
+                                            defaultValue={0}
+                                            placeholder="Teléfono"
                                         />
                                         <small className='text-center text-danger'> {errors.telefono_inquilino && errors.telefono_inquilino.message} </small>
                                     </div>
@@ -676,8 +676,8 @@ const AgregarPropietariosForm = ({ propietarioActive }) => {
                                             type="text"
                                             className="form-control"
                                             {...register("telefono_baldio")}
-                                    defaultValue={0}
-                                    placeholder="Teléfono"
+                                            defaultValue={0}
+                                            placeholder="Teléfono"
                                         />
                                         <small className='text-center text-danger'> {errors.telefono_baldio && errors.telefono_baldio.message} </small>
                                     </div>
