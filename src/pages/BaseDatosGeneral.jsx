@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import { BsEnvelope, BsPencilSquare } from "react-icons/bs";
+import { BsPencilSquare } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 
 import { cleanPropietarioActive, getPropietarios, setPropietarioActive } from '../actions/baseDeDatosGeneral';
-import { DataTableComponent } from '../components/table/DatatableComponent';
+import { DataTableComponent } from '../components/table/DataTableComponent';
 import { AdminHeader } from '../components/ui/AdminHeader';
-import LoaderBtn from "../components/ui/btn/LoaderBtn";
 import { ModalWithBtn } from "../components/ui/btn/ModalWithBtn";
 
 const DatosPersonales = ({ info }) => {
