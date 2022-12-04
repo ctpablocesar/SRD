@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import Select from "react-select";
 
 import { saveEstadisticas } from "../actions/estadisticas";
-import { DataTableComponent } from '../components/table/DatatableComponent';
-import { AdminCard } from '../components/ui/AdminCard';
-import { AdminHeader } from '../components/ui/AdminHeader';
+import { DataTableComponent } from '../components/table/DatatableComponent.jsx';
+import { AdminCard } from '../components/ui/AdminCard.jsx';
+import { AdminHeader } from '../components/ui/AdminHeader.jsx';
 
 const EstadisticasPage = () => {
 

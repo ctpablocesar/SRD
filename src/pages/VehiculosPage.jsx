@@ -1,7 +1,5 @@
-import { TbArrowBackUp } from 'react-icons/tb'
-import { NavLink } from 'react-router-dom'
-import VehiculosForm from '../components/forms/VehiculosForm'
-import { RegresarBtn } from '../components/ui/btn/RegresarBtn'
+import VehiculosForm from '../components/forms/VehiculosForm.jsx'
+import { RegresarBtn } from '../components/ui/btn/RegresarBtn.jsx'
 
 const VehiculosPage = () => {
     return (

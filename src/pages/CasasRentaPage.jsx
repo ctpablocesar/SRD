@@ -3,10 +3,10 @@ import { BsEnvelope, BsPencilSquare } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 
 import { getRentadas, setPropietarioActive } from "../actions/baseDeDatosGeneral";
-import { DataTableComponent } from '../components/table/DatatableComponent';
-import { AdminCard } from '../components/ui/AdminCard';
-import { AdminHeader } from '../components/ui/AdminHeader';
-import { ModalWithBtn } from "../components/ui/btn/ModalWithBtn";
+import { DataTableComponent } from '../components/table/DatatableComponent.jsx';
+import { AdminCard } from '../components/ui/AdminCard.jsx';
+import { AdminHeader } from '../components/ui/AdminHeader.jsx';
+import { ModalWithBtn } from "../components/ui/btn/ModalWithBtn.jsx";
 
 
 const DatosInquilino = ({ info }) => {

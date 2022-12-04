@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom'
-import { AdminHeader } from '../components/ui/AdminHeader'
+import { AdminHeader } from '../components/ui/AdminHeader.jsx'
 import { TbArrowBackUp } from 'react-icons/tb';
 import { useSelector } from 'react-redux';
-import AgregarPropietariosForm from '../components/forms/AgregarPropietariosForm';
+import AgregarPropietariosForm from '../components/forms/AgregarPropietariosForm.jsx';
 
 const PropietarioPage = () => {
 

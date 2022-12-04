@@ -1,5 +1,5 @@
-import InquilinoForm from '../components/forms/InquilinoForm'
-import { RegresarBtn } from '../components/ui/btn/RegresarBtn'
+import InquilinoForm from '../components/forms/InquilinoForm.jsx'
+import { RegresarBtn } from '../components/ui/btn/RegresarBtn.jsx'
 
 const InquilinoPage = () => {
     return (

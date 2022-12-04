@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Toaster } from "react-hot-toast";
-import { AdminSidebar } from './AdminSidebar';
-import UserNavbar from "./UserNavbar";
+import { AdminSidebar } from './AdminSidebar.jsx';
+import UserNavbar from "./UserNavbar.jsx";
 
 
 const AdminDashboard = ({ children }) => {

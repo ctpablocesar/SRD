@@ -1,7 +1,7 @@
 import { FaPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { ModalWithBtn } from "./btn/ModalWithBtn";
-import { RegresarBtn } from "./btn/RegresarBtn";
+import { ModalWithBtn } from "./btn/ModalWithBtn.jsx";
+import { RegresarBtn } from "./btn/RegresarBtn.jsx";
 
 export const AdminCard = ({ children, title, backBtn = false, modalBtn = null, titleModal, sizeModal = "", linkBtn = "" }) => {
   // modalBtn: Recibe child para la modal de agregar

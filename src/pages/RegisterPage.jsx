@@ -1,4 +1,4 @@
-import AgregarPropietariosForm from "../components/forms/AgregarPropietariosForm"
+import AgregarPropietariosForm from "../components/forms/AgregarPropietariosForm.jsx"
 
 const RegisterPage = () => {
 

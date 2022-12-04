@@ -4,8 +4,9 @@ import { useForm } from 'react-hook-form'
 import { FaBuilding, FaRegSave } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux'
 import * as yup from 'yup'
+
 import { updateInquilinoData } from '../../actions/baseDeDatosGeneral'
-import LoaderBtn from '../ui/btn/LoaderBtn'
+import LoaderBtn from '../ui/btn/LoaderBtn.jsx'
 
 
 const schema = yup.object().shape({

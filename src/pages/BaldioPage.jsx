@@ -1,7 +1,5 @@
-import { TbArrowBackUp } from 'react-icons/tb';
-import { NavLink } from 'react-router-dom';
-import BaldioForm from '../components/forms/BaldioForm';
-import { RegresarBtn } from '../components/ui/btn/RegresarBtn';
+import BaldioForm from '../components/forms/BaldioForm.jsx';
+import { RegresarBtn } from '../components/ui/btn/RegresarBtn.jsx';
 
 const BaldioPage = () => {
     return (

@@ -4,10 +4,10 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 
 import { cleanPropietarioActive, getPropietarios, setPropietarioActive } from '../actions/baseDeDatosGeneral';
-import { DataTableComponent } from "../components/table/DatatableComponent";
+import { DataTableComponent } from "../components/table/DatatableComponent.jsx";
 
-import { AdminHeader } from '../components/ui/AdminHeader';
-import { ModalWithBtn } from "../components/ui/btn/ModalWithBtn";
+import { AdminHeader } from '../components/ui/AdminHeader.jsx';
+import { ModalWithBtn } from "../components/ui/btn/ModalWithBtn.jsx";
 
 const DatosPersonales = ({ info }) => {
     return (

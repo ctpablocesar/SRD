@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import * as yup from 'yup';
 
 import { savePropietario, updatePropietario } from '../../actions/baseDeDatosGeneral';
-import LoaderBtn from '../ui/btn/LoaderBtn';
+import LoaderBtn from '../ui/btn/LoaderBtn.jsx';
 
 
 const schema = yup.object().shape({

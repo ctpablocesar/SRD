@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import * as yup from 'yup';
 
 import { startLogin } from '../actions/auth';
-import LoaderBtn from '../components/ui/btn/LoaderBtn';
+import LoaderBtn from '../components/ui/btn/LoaderBtn.jsx';
 
 const schema = yup.object().shape({
     email: yup.string().email().required(),

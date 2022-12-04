@@ -1,5 +1,5 @@
 import React from 'react'
-import { RegresarBtn } from '../components/ui/btn/RegresarBtn'
+import { RegresarBtn } from '../components/ui/btn/RegresarBtn.jsx'
 
 const Error404Page = () => {
     return (

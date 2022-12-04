@@ -1,7 +1,4 @@
-import { FaHome } from 'react-icons/fa';
-import { FiUsers } from "react-icons/fi";
 import { useDispatch } from 'react-redux';
-import { NavLink } from "react-router-dom";
 import { startLogout } from '../../actions/auth';
 
 

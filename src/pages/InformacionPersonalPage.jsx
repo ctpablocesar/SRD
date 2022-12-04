@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 import { cleanVehiculos, getInformacionPersonal, setHabitanteActive } from "../actions/informacionPersonal";
-import { DataTableComponent } from '../components/table/DatatableComponent';
-import { AdminCard } from '../components/ui/AdminCard';
-import { AdminHeader } from '../components/ui/AdminHeader';
+import { DataTableComponent } from '../components/table/DatatableComponent.jsx';
+import { AdminCard } from '../components/ui/AdminCard.jsx';
+import { AdminHeader } from '../components/ui/AdminHeader.jsx';
 
 const RegistroVehicularPage = () => {
     const columns = [
