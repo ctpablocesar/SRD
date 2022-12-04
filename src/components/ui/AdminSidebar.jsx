@@ -43,6 +43,11 @@ export const AdminSidebar = ({ show }) => {
                                     Registro vehicular
                                 </NavLink>
                             </li>
+                            <li className="sidebar-item">
+                                <NavLink className="sidebar-link" to="/admin/estadisticas">
+                                    Estadisticas
+                                </NavLink>
+                            </li>
                         </ul>
                     </li>
                     <li className="sidebar-item text-light active my-2">

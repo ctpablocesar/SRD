@@ -8,6 +8,7 @@ import BaldioPage from '../pages/BaldioPage'
 import BaseDatosGeneral from '../pages/BaseDatosGeneral'
 import CasasRentaPage from '../pages/CasasRentaPage'
 import Error404Page from '../pages/Error404Page'
+import EstadisticasPage from '../pages/EstadisticasPage'
 import IndexPage from '../pages/IndexPage'
 import RegistroVehicularPage from '../pages/InformacionPersonalPage'
 import InquilinoPage from '../pages/InquilinoPage'
@@ -45,7 +46,7 @@ const AppRouter = () => {
                                         <Route path="/baldio" element={<BaldioPage />} />
                                         <Route path="/registro-vehicular" element={<RegistroVehicularPage />} />
                                         <Route path="/vehiculos" element={<VehiculosPage />} />
-
+                                        <Route path="/estadisticas" element={<EstadisticasPage />} />
                                         <Route path="/*" element={<Error404Page />} />
                                     </Routes>
                                 </AdminDashboard>

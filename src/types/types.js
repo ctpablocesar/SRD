@@ -15,4 +15,6 @@ export const types = {
     habitanteActive: "[Informacion Personal] Guardando habitante active",
     addingVehiculo: "[Informacion Personal] Agregando Vehiculo",
     emptyVehiculos: "[Informacion Personal] Limpiando vehiculos",
+
+    settingEstadisticas: "[Estadisticas] Guardando estadisticas",
 }
