@@ -2,6 +2,7 @@
   "name": "srd",
   "private": true,
   "version": "0.10.0",
+  "homepage": "https://ciudadanoscomprometidos.com.mx/sdr_int/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -29,6 +30,7 @@
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
     "sweetalert2": "^11.6.15",
+    "vite-plugin-pwa": "^0.13.3",
     "yup": "^0.32.11"
   },
   "devDependencies": {
