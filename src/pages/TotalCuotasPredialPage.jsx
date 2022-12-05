@@ -3,7 +3,8 @@ import { DataTable } from 'primereact/datatable';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getTotales } from '../actions/cuotasPredial';
-import { DataTableComponent } from '../components/table/DatatableComponent';
+import { DataTableComponent } from "../components/table/DataTableComponent";
+
 import { AdminCard } from '../components/ui/AdminCard';
 
 const TotalCuotasPredialPage = () => {

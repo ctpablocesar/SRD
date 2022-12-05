@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getPendientes } from '../actions/cuotasPredial';
-import { DataTableComponent } from '../components/table/DatatableComponent';
+import { DataTableComponent } from "../components/table/DataTableComponent";
+
 import { AdminCard } from '../components/ui/AdminCard';
 
 const TotalPendientePage = () => {

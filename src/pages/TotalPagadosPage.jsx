@@ -1,15 +1,12 @@
-import jsPDF from 'jspdf';
-import autoTable from "jspdf-autotable";
-import moment from 'moment';
 import { useEffect, useState } from 'react';
-import { BsFileEarmarkPdf, BsFillTrash2Fill, BsFillTrashFill } from 'react-icons/bs';
+import { BsFillTrash2Fill } from 'react-icons/bs';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
-import { deleteCuota, getPagados } from '../actions/cuotasPredial';
-import { DataTableComponent } from '../components/table/DatatableComponent';
+import { getPagados } from '../actions/cuotasPredial';
+import { DataTableComponent } from "../components/table/DataTableComponent";
+
 import { AdminCard } from '../components/ui/AdminCard';
-import { ModalWithBtn } from '../components/ui/btn/ModalWithBtn';
 
 const TotalPagadosPage = () => {
 
