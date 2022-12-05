@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { Route, Routes, HashRouter } from 'react-router-dom'
 import { startChecking } from '../actions/auth'
 
 import AdminDashboard from '../components/ui/AdminDashboard.jsx'
@@ -35,7 +35,7 @@ const AppRouter = () => {
 
     return (
         <>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route
                         path='admin/*'
@@ -75,7 +75,7 @@ const AppRouter = () => {
                             </PublicRoute>
                         } />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </>
     )
 }
