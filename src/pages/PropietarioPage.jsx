@@ -11,7 +11,7 @@ const PropietarioPage = () => {
     return (
         <>
             <AdminHeader
-                title='Agregar propietario'
+                title='Editar propietario'
             />
             <div className="card">
                 <div className="card-header border-bottom border-1">

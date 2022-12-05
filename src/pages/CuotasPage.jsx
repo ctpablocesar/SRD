@@ -61,7 +61,7 @@ const CuotasPage = () => {
             center: true,
         },
         {
-            name: "Total Cuotas de mantenimiento",
+            name: "Total Cuotas",
             selector: (row) => row.total_cuotas,
             sortable: true,
             width: "auto",
