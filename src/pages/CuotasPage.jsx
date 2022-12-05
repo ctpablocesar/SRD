@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCuotas, setFecha, setTotal } from "../actions/cuotasPredial";
-import { DataTableComponent } from "../components/table/DatatableComponent";
+import { DataTableComponent } from "../components/table/DataTableComponent";
+
 
 const CuotasPage = () => {
     const dispatch = useDispatch();
