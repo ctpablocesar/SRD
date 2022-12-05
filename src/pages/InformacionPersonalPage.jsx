@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 import { cleanVehiculos, getInformacionPersonal, setHabitanteActive } from "../actions/informacionPersonal";
-import { DataTableComponent } from '../components/table/DatatableComponent.jsx';
+import { DataTableComponent } from "../components/table/DataTableComponent";
+
 import { AdminCard } from '../components/ui/AdminCard.jsx';
 import { AdminHeader } from '../components/ui/AdminHeader.jsx';
 

@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Select from "react-select";
 
 import { saveEstadisticas } from "../actions/estadisticas";
-import { DataTableComponent } from '../components/table/DatatableComponent.jsx';
+import { DataTableComponent } from "../components/table/DataTableComponent";
+
 import { AdminCard } from '../components/ui/AdminCard.jsx';
 import { AdminHeader } from '../components/ui/AdminHeader.jsx';
 

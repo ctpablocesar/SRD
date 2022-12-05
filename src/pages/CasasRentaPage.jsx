@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { BsEnvelope, BsPencilSquare } from "react-icons/bs";
+import { BsPencilSquare } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 
 import { getRentadas, setPropietarioActive } from "../actions/baseDeDatosGeneral";
-import { DataTableComponent } from '../components/table/DatatableComponent.jsx';
+import { DataTableComponent } from "../components/table/DataTableComponent";
+
 import { AdminCard } from '../components/ui/AdminCard.jsx';
 import { AdminHeader } from '../components/ui/AdminHeader.jsx';
 import { ModalWithBtn } from "../components/ui/btn/ModalWithBtn.jsx";
